@@ -41,6 +41,10 @@ body {
   font-weight: 400;
 }
 
+span {
+  color: #148aad;
+  font-weight: bold;
+}
 p {
   margin-top: 1rem;
   font-size: 18px;
@@ -74,7 +78,7 @@ img {
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 200px;
+  grid-template-rows: 80px 350px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   background-color: #666666;
@@ -89,12 +93,20 @@ img {
 .div2 {
   grid-area: 2 / 1 / 3 / 2;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .div3 {
   grid-area: 2 / 2 / 3 / 3;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .div4 {
   grid-area: 2 / 3 / 3 / 4;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .div2:hover {
@@ -155,12 +167,16 @@ footer {
   display: flex;
   justify-content: center;
   min-height: 300px;
+  width: 100%;
   align-items: center;
-  gap: 15%;
+  gap: 25px;
 }
 .contact {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  letter-spacing: 2px;
+  justify-content: center;
+  text-align: center;
 }
 .contact,
 h3 {
@@ -169,8 +185,12 @@ h3 {
   text-align: center;
 }
 
-.social-container {
-  
+i {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  display: flex;
+  letter-spacing: 4px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -181,4 +201,36 @@ h3 {
     justify-content: center;
     align-items: center;
   }
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #5fa7bd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #14657e;
+}
+
+.container {
+  border-radius: 5px;
+  
+  padding: 20px;
 }
